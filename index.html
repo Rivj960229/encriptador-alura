@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+  </head>
+  <body>
+    <main>
+      <header class="encabezado__contenedor">
+        <h1 class="encabezado__titulo">
+          <img class="encabezado__logo" src="imagenes/icon.png" alt="Icono">
+        </h1>
+      </header>
+      
+      <div class="principal__contenedor">
+        <section class="textos__contenedor">
+          <textarea class="textos__area-texto" placeholder="Ingrese el texto aquí" id="textarea" cols="30" rows="10"></textarea>
+  
+          <p class="textos__informacion">
+            <img class="textos__icono" src="imagenes/exclamacion.png" alt="signo exclamación">Solo letras minúsculas y sin acentos
+          </p>
+  
+          <div class="textos__botones">
+            <button class="textos__boton" id="encriptar">Encriptar</button>
+            <button class="textos__boton" id="desencriptar">Desencriptar</button>
+            <button class="textos__boton" id="limpiar">Limpiar</button>
+          </div>
+        </section>
+      
+
+      <section class="encriptador__contenedor">
+        <div class="encriptador__textos" id="textos">
+          <img class="encriptador__imagen " src="imagenes/Muñeco.png" alt="personaje">
+          <h3 class="encriptador__titulo">Ningún mensaje fue encontrado</h3>
+          <p class="encriptador__mensaje-error">
+            Ingresa el texto que desees encriptar o desencriptar
+          </p>
+        </div>
+        <p class="encriptador__mensaje-encriptado" id="texto-encriptado"></p>
+        <button class="textos__boton encriptador__boton" id="copiar">Copiar</button>
+      </section>
+    </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
